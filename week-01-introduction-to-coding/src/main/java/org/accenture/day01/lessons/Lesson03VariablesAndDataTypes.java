@@ -18,6 +18,8 @@ public class Lesson03VariablesAndDataTypes {
     }
     public void printInstanceVariables() {
         //TODO: Print instance variables integer and boolean in this class, in one line
+        System.out.print(someInstanceVariableInteger);
+        System.out.print(someInstanceVariableBoolean);
     }
 
     // Some concepts around variables & data types
@@ -36,21 +38,22 @@ public class Lesson03VariablesAndDataTypes {
         // Concept - Narrowing vs Widening conversions
         someDouble = someInteger; // this is fine
         //TODO uncomment and see what happens
-        //someInteger = someDouble; // ?
+        someInteger = (int) someDouble; // ?
 
         // Concept - Casting
         //TODO How to make someInteger = someDouble work ?
-
+        someInteger = (int) someDouble;
         // Concept - Immutable vs Mutable objects
         //TODO What is the value for the '?' symbol (debug / print to verify)
         String stringA = "String A"; // stringA = "String A"
         String stringB = stringA; // stringA = "String A", stringB = "String A"
         stringA = "String C"; // stringA = "String C", stringB = ?
-
+        System.out.println(stringB);
         //TODO What is the value for the '?' symbol (debug / print to verify)
         Person personA = new Person("Alice"); // personA.getName() = "Alice"
         Person personB = personA; // personA.getName() = "Alice", personB.getName() = "Alice"
         personA.setName("Bob"); // personA.getName() = "Bob", personB.getName() = ?
+        System.out.println(personB.getName());
     }
     public Lesson03VariablesAndDataTypes() {
 

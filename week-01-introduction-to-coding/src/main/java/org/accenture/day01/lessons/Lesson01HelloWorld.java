@@ -27,11 +27,17 @@ public class Lesson01HelloWorld {
         System.out.println("Hello, world!");
 
         //TODO: Use addFiveToNumber method from Lesson02Methods class and print it
+        Lesson02Methods lesson02 = new Lesson02Methods();
+        System.out.println(lesson02.addFiveToNumber(4));
 
         //TODO: Use the method that returns two integers from Lesson02Methods and print it
-
+        System.out.println(lesson02.sumOfTwoNumbers(1,2));
         //TODO: Invoke printInstanceVariables() method from Lesson03VariablesAndDataTypes
-
+        Lesson03VariablesAndDataTypes lesson03 = new Lesson03VariablesAndDataTypes();
+        lesson03.printInstanceVariables();
+        lesson03.playAroundWithVariablesAndDataTypes();
         //TODO: Try to change the values here for HELLO_WORLD and FINAL_HELLO_WORLD variables that belongs in Lesson03VariablesAndDataTypes
+        Lesson03VariablesAndDataTypes.HELLO_WORLD = "Hello world";
+        System.out.println(Lesson03VariablesAndDataTypes.HELLO_WORLD);
     }
 }

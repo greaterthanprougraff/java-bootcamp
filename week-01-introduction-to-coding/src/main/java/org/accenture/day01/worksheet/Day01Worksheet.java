@@ -6,57 +6,61 @@ package org.accenture.day01.worksheet;
     */
 public class Day01Worksheet {
     public static int getFixedInteger() {
-        return 0;
+        return 10;
     }
 
     public static int sum(int x, int y) {
-        return 0;
+        return x + y;
     }
 
     public static int difference(int x, int y) {
-        return 0;
+        return x - y;
     }
     public static int multiply(int x, int y) {
-        return 0;
+        return x * y;
     }
 
     public static int divide(int x, int y) {
-        return 0;
+        return x / y;
     }
 
     public static int modulo(int x, int y) {
-        return 0;
+        return x % y;
     }
 
     public static boolean isEven(int x) {
-        return false;
+        return x % 2 == 0;
     }
 
-    public static int isOdd(int x) {
-        return 0;
+    public static boolean isOdd(int x) {
+        return x % 2 == 1;
     }
 
     public static boolean isGreaterThan(int x, int y) {
-        return false;
+        return x > y;
     }
 
-    public static int isLesserThan(int x, int y) {
-        return 0;
+    public static boolean isLesserThan(int x, int y) {
+        return x < y;
     }
 
     public static String getHelloWorld() {
-        return "";
+        return "Hello World";
     }
 
-    public static int getDoubleSum(double x, double y) {
-        return 0;
+    public static double getDoubleSum(double x, double y) {
+        return x + y;
     }
 
     public static String combineInputWithSpace(String a, int b) {
-        return "";
+        return a + " " + b;
     }
     public static int reverse3DigitsUsingArithmeticOperators(int x) {
-        return 0;
+        int first = ((int) x / 100);
+        int second = ((int) x / 10);
+        int third  = ((int) x % second);
+        second = second - first * 10;
+        return third * 100 + second * 10 + first;
     }
 
 }

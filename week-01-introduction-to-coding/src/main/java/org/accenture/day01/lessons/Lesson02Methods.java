@@ -15,7 +15,9 @@ public class Lesson02Methods {
     }
 
     //TODO: Write a public method that returns the sum (as integer) of two integers
-
+    public int sumOfTwoNumbers(int b, int c){
+        return b + c;
+    }
     // Constructor - special method that runs when you create an object — sets up its initial state.
     public Lesson02Methods() {
         // Constructor body (can be empty or set initial values)

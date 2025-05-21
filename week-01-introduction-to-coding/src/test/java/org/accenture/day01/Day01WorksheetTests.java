@@ -6,6 +6,7 @@ import org.junit.jupiter.api.DisplayNameGenerator;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 /*
  *  TODO Use this class to test your Day01Worksheet.java class
@@ -43,8 +44,8 @@ public class Day01WorksheetTests {
 
     @Test
     public void Return_remainder() {
-        assertEquals(1, Day01Worksheet.modulo(5,5));
-        assertEquals(2, Day01Worksheet.modulo(6,3));
+        assertEquals(0, Day01Worksheet.modulo(5,5));
+        assertEquals(0, Day01Worksheet.modulo(6,3));
     }
 
     @Test
@@ -92,6 +93,14 @@ public class Day01WorksheetTests {
         assertEquals("Dave 100", Day01Worksheet.combineInputWithSpace("Dave", 100));
     }
 
-    //TODO Create 1-2 of your own unit tests for Day01Worksheet and make them pass
+    @Test
+    public void Reverse_a_3_digit_integer_using_arithmetic_operators_not_equals() {
+        assertNotEquals(123, Day01Worksheet.reverse3DigitsUsingArithmeticOperators(123));
+        assertNotEquals(456, Day01Worksheet.reverse3DigitsUsingArithmeticOperators(456));
+    }
 
+    @Test
+    public void Return_Hello_World_string_not_equals() {
+        assertNotEquals("Goodbye Moon", Day01Worksheet.getHelloWorld());
+    }
 }
